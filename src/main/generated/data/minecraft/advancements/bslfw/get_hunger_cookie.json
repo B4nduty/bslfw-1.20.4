@@ -1,0 +1,35 @@
+{
+  "criteria": {
+    "get_hunger_cookie": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bslfw:hunger_cookie"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "translate": "advancement.hunger_cookie.desc"
+    },
+    "frame": "challenge",
+    "icon": {
+      "item": "bslfw:hunger_cookie"
+    },
+    "title": {
+      "translate": "advancement.hunger_cookie.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_hunger_cookie"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

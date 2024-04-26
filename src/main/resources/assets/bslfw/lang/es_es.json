@@ -1,0 +1,18 @@
+{
+  "item.bslfw.hunger_cookie": "Galleta del Hambre",
+
+  "text.autoconfig.bslfw.title": "Banduty's Limit Food Waste",
+  "text.autoconfig.bslfw.option.common.modifyHungerLimitHungerCookie": "Permitir Límite de Hambre",
+  "text.autoconfig.bslfw.option.common.modifyHungerLimitHungerCookie.@Tooltip": "Si se establece en True, no se generará la Galleta del Hambre.",
+  "text.autoconfig.bslfw.option.common.hungerLimit": "Límite del Hambre",
+  "text.autoconfig.bslfw.option.common.hungerCookieChanceSpawn": "Galleta del Hambre - Probabilidad de Aparición",
+
+  "message.bslfw.hunger_cookie.limited": "Ahora estás Protegido de la Hambruna",
+  "message.bslfw.hunger_cookie.unlimited": "Ahora estás Expuesto a la Hambruna",
+
+  "advancement.hunger_cookie.title": "El Monstruo de las Galletas",
+  "advancement.hunger_cookie.desc": "Consigue una Galleta del Hambre",
+
+  "tooltip.bslfw.ur_welcome.tooltip": "¡De Na'! Pa' Eso 'Tamos :D",
+  "tooltip.bslfw.just_eat_it.tooltip": "¡Just Do It For Your Lover!"
+}

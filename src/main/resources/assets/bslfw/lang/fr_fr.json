@@ -1,0 +1,18 @@
+{
+  "item.bslfw.hunger_cookie": "Biscuit de la Faim",
+
+  "text.autoconfig.bslfw.title": "Banduty's Limit Food Waste",
+  "text.autoconfig.bslfw.option.common.modifyHungerLimitHungerCookie": "Autoriser la Limite de Faim",
+  "text.autoconfig.bslfw.option.common.modifyHungerLimitHungerCookie.@Tooltip": "S'il est défini sur True, Biscuit de la Faim n'Apparaît Pas",
+  "text.autoconfig.bslfw.option.common.hungerLimit": "Limite de Faim",
+  "text.autoconfig.bslfw.option.common.hungerCookieChanceSpawn": "Biscuit de la faim - Apparition Fortuite",
+
+  "message.bslfw.hunger_cookie.limited": "Vous êtes Désormais Protégé de la Famine",
+  "message.bslfw.hunger_cookie.unlimited": "Vous êtes Maintenant Exposé à la Famine",
+
+  "advancement.hunger_cookie.title": "Anton Ego",
+  "advancement.hunger_cookie.desc": "Obtenez un Biscuit de la Faim",
+
+  "tooltip.bslfw.ur_welcome.tooltip": "Pas de Quoi! :D",
+  "tooltip.bslfw.just_eat_it.tooltip": "Mange-le!"
+}

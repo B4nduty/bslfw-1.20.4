@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "bslfw",
+	"version": "${version}",
+	"name": "BsLFW",
+	"description": "This mod aims to limit the hunger to go lower than 6.",
+	"authors": [
+		"Banduty"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "All Rights Reserved",
+	"icon": "assets/bslfw/limit_food_waste.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"banduty.bslfw.BsLFW"
+		],
+		"fabric-datagen": [
+			"banduty.bslfw.BsLFWDataGenerator"
+		],
+		"modmenu": [
+			"banduty.bslfw.compat.ModMenuIntegration"
+		]
+	},
+	"mixins": [
+		"bslfw.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"cloth-config": ">=13.0.121-fabric",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
