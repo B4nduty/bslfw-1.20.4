@@ -8,8 +8,9 @@
 		"Banduty"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/bandutys-lfw",
+		"sources": "https://github.com/B4nduty/bslfw-1.20.4",
+		"issues": "https://discord.gg/Tx24vBa8ez"
 	},
 	"license": "All Rights Reserved",
 	"icon": "assets/bslfw/limit_food_waste.png",
