@@ -12,11 +12,11 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 
 public class ModItems {
-    public static final Item HUNGER_COOKIE = registerItem("hunger_cookie",
-            new HungerCookie(new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1)));
+    public static final Item HEART_OF_HUNGER = registerItem("heart_of_hunger",
+            new HeartOfHunger(new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1)));
 
     private static void addItemsToFoodAndDrinkItemGroup(FabricItemGroupEntries entries) {
-        entries.add(HUNGER_COOKIE);
+        entries.add(HEART_OF_HUNGER);
     }
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(BsLFW.MOD_ID, name), item);

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "bslfw:item/hunger_cookie"
+    "layer0": "bslfw:item/heart_of_hunger"
   }
 }

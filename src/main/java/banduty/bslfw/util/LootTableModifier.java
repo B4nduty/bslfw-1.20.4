@@ -1,7 +1,6 @@
 package banduty.bslfw.util;
 
 import banduty.bslfw.BsLFW;
-import banduty.bslfw.config.ModConfigs;
 import banduty.bslfw.item.ModItems;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.loot.LootPool;
@@ -30,14 +29,14 @@ public class LootTableModifier {
             = new Identifier("minecraft", "blocks/potatoes");
 
     public static void modifyLootTables() {
-        if (!BsLFW.CONFIG.common.modifyHungerLimitHungerCookie) {
+        if (!BsLFW.CONFIG.common.modifyHungerLimitHeartOfHunger) {
             LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
                 if (COW_ID.equals(id) || PIG_ID.equals(id) || CHICKEN_ID.equals(id) || SHEEP_ID.equals(id) || WHEAT_ID.equals(id) ||
                         CARROTS_ID.equals(id) || POTATOES_ID.equals(id)) {
                     LootPool.Builder hungerCookie = LootPool.builder()
                             .rolls(ConstantLootNumberProvider.create(1))
-                            .conditionally(RandomChanceLootCondition.builder(BsLFW.CONFIG.common.getHungerCookieChanceSpawn()))
-                            .with(ItemEntry.builder(ModItems.HUNGER_COOKIE))
+                            .conditionally(RandomChanceLootCondition.builder(BsLFW.CONFIG.common.getHeartOfHungerChanceSpawn()))
+                            .with(ItemEntry.builder(ModItems.HEART_OF_HUNGER))
                             .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
                     tableBuilder.pool(hungerCookie.build());

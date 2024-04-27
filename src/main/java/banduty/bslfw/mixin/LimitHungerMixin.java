@@ -21,7 +21,7 @@ public class LimitHungerMixin {
 
     @ModifyArg(method = "update", at = @At(value = "INVOKE", target = "Ljava/lang/Math;max(II)I"), index = 1)
     private int bslfw$limitFood(int x) {
-        if (BsLFW.CONFIG.common.modifyHungerLimitHungerCookie || LimitHunger.isLimitedHunger((IEntityDataSaver) MinecraftClient.getInstance().player)) {
+        if (BsLFW.CONFIG.common.modifyHungerLimitHeartOfHunger || LimitHunger.isLimitedHunger((IEntityDataSaver) MinecraftClient.getInstance().player)) {
             return BsLFW.CONFIG.common.getHungerLimit();
         } else return x;
     }
@@ -29,7 +29,7 @@ public class LimitHungerMixin {
     @Inject(method = "update", at = @At("HEAD"))
     private void bslfw$deleteHungerEffect (PlayerEntity player, CallbackInfo ci) {
         if (foodLevel <= BsLFW.CONFIG.common.getHungerLimit()) {
-            if (BsLFW.CONFIG.common.modifyHungerLimitHungerCookie || LimitHunger.isLimitedHunger((IEntityDataSaver) player)) {
+            if (BsLFW.CONFIG.common.modifyHungerLimitHeartOfHunger || LimitHunger.isLimitedHunger((IEntityDataSaver) player)) {
                 player.removeStatusEffect(new StatusEffectInstance(StatusEffects.HUNGER).getEffectType());
             }
         }

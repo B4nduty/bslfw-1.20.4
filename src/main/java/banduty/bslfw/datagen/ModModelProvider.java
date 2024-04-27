@@ -19,6 +19,6 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.HUNGER_COOKIE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HEART_OF_HUNGER, Models.GENERATED);
     }
 }

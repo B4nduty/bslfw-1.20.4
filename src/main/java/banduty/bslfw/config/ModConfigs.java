@@ -19,7 +19,7 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         @ConfigEntry.Gui.Tooltip()
         @Comment("Allow Hunger Limit | Default: false" +
                 "If set True, Hunger Cookie won't Spawn")
-        public boolean modifyHungerLimitHungerCookie = false;
+        public boolean modifyHungerLimitHeartOfHunger = false;
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
@@ -32,11 +32,11 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Hunger Cookie Chance of Spawn | Default: 0.0001f
+                Hunger Cookie Chance of Spawn | Default: 0.0002f
                 """)
-        float hungerCookieChanceSpawn = 0.0001f;
-        public float getHungerCookieChanceSpawn() {
-            return Math.max(0, hungerCookieChanceSpawn);
+        float heartOfHungerChanceSpawn = 0.0002f;
+        public float getHeartOfHungerChanceSpawn() {
+            return Math.max(0, heartOfHungerChanceSpawn);
         }
     }
 }

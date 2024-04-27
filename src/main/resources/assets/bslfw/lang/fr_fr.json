@@ -1,18 +1,15 @@
 {
-  "item.bslfw.hunger_cookie": "Biscuit de la Faim",
+  "item.bslfw.heart_of_hunger": "Coeur de Faim",
 
   "text.autoconfig.bslfw.title": "Banduty's Limit Food Waste",
-  "text.autoconfig.bslfw.option.common.modifyHungerLimitHungerCookie": "Autoriser la Limite de Faim",
-  "text.autoconfig.bslfw.option.common.modifyHungerLimitHungerCookie.@Tooltip": "S'il est défini sur True, Biscuit de la Faim n'Apparaît Pas",
+  "text.autoconfig.bslfw.option.common.modifyHungerLimitHeartOfHunger": "Autoriser la Limite de Faim",
+  "text.autoconfig.bslfw.option.common.modifyHungerLimitHeartOfHunger.@Tooltip": "S'il est défini sur True, Coeur de Faim n'Apparaît Pas",
   "text.autoconfig.bslfw.option.common.hungerLimit": "Limite de Faim",
-  "text.autoconfig.bslfw.option.common.hungerCookieChanceSpawn": "Biscuit de la faim - Apparition Fortuite",
+  "text.autoconfig.bslfw.option.common.heartOfHungerChanceSpawn": "Coeur de Faim - Apparition Fortuite",
 
-  "message.bslfw.hunger_cookie.limited": "Vous êtes Désormais Protégé de la Famine",
-  "message.bslfw.hunger_cookie.unlimited": "Vous êtes Maintenant Exposé à la Famine",
+  "message.bslfw.heart_of_hunger.limited": "Vous êtes Désormais Protégé de la Famine",
+  "message.bslfw.heart_of_hunger.unlimited": "Vous êtes Maintenant Exposé à la Famine",
 
-  "advancement.hunger_cookie.title": "Anton Ego",
-  "advancement.hunger_cookie.desc": "Obtenez un Biscuit de la Faim",
-
-  "tooltip.bslfw.ur_welcome.tooltip": "Pas de Quoi! :D",
-  "tooltip.bslfw.just_eat_it.tooltip": "Mange-le!"
+  "advancement.heart_of_hunger.title": "Anton Ego",
+  "advancement.heart_of_hunger.desc": "Obtenez un Coeur de Faim"
 }

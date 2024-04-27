@@ -5,7 +5,7 @@
         "items": [
           {
             "items": [
-              "bslfw:hunger_cookie"
+              "bslfw:heart_of_hunger"
             ]
           }
         ]
@@ -16,14 +16,14 @@
   "display": {
     "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
     "description": {
-      "translate": "advancement.hunger_cookie.desc"
+      "translate": "advancement.heart_of_hunger.desc"
     },
     "frame": "challenge",
     "icon": {
-      "item": "bslfw:hunger_cookie"
+      "item": "bslfw:heart_of_hunger"
     },
     "title": {
-      "translate": "advancement.hunger_cookie.title"
+      "translate": "advancement.heart_of_hunger.title"
     }
   },
   "requirements": [

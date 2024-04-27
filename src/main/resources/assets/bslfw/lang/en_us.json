@@ -1,18 +1,15 @@
 {
-  "item.bslfw.hunger_cookie": "Hunger Cookie",
+  "item.bslfw.heart_of_hunger": "Heart Of Hunger",
 
   "text.autoconfig.bslfw.title": "Banduty's Limit Food Waste",
-  "text.autoconfig.bslfw.option.common.modifyHungerLimitHungerCookie": "Allow Hunger Limit",
-  "text.autoconfig.bslfw.option.common.modifyHungerLimitHungerCookie.@Tooltip": "If set True, Hunger Cookie won't Spawn",
+  "text.autoconfig.bslfw.option.common.modifyHungerLimitHeartOfHunger": "Allow Hunger Limit",
+  "text.autoconfig.bslfw.option.common.modifyHungerLimitHeartOfHunger.@Tooltip": "If set True, Heart Of Hunger won't Spawn",
   "text.autoconfig.bslfw.option.common.hungerLimit": "Hunger Limit",
-  "text.autoconfig.bslfw.option.common.hungerCookieChanceSpawn": "Hunger Cookie - Chance Spawn",
+  "text.autoconfig.bslfw.option.common.heartOfHungerChanceSpawn": "Heart Of Hunger - Chance Spawn",
 
-  "message.bslfw.hunger_cookie.limited": "You are now Protected from Famine",
-  "message.bslfw.hunger_cookie.unlimited": "You are now Exposed to the Famine",
+  "message.bslfw.heart_of_hunger.limited": "You are now Protected from Famine",
+  "message.bslfw.heart_of_hunger.unlimited": "You are now Exposed to the Famine",
 
-  "advancement.hunger_cookie.title": "Gordon Ramsay",
-  "advancement.hunger_cookie.desc": "Get Hunger Cookie",
-
-  "tooltip.bslfw.ur_welcome.tooltip": "You're welcome! :D",
-  "tooltip.bslfw.just_eat_it.tooltip": "Just Eat It!"
+  "advancement.heart_of_hunger.title": "Gordon Ramsay",
+  "advancement.heart_of_hunger.desc": "Get Heart Of Hunger"
 }

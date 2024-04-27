@@ -22,16 +22,16 @@ public class AdvancementsProvider extends FabricAdvancementProvider {
     public void generateAdvancement(Consumer<AdvancementEntry> consumer) {
         AdvancementEntry hungerCookieAdvancement = Advancement.Builder.create()
                 .display(
-                        ModItems.HUNGER_COOKIE,
-                        Text.translatable("advancement.hunger_cookie.title"),
-                        Text.translatable("advancement.hunger_cookie.desc"),
+                        ModItems.HEART_OF_HUNGER,
+                        Text.translatable("advancement.heart_of_hunger.title"),
+                        Text.translatable("advancement.heart_of_hunger.desc"),
                         new Identifier("textures/gui/advancements/backgrounds/adventure.png"),
                         AdvancementFrame.CHALLENGE,
                         true,
                         true,
                         false
                 )
-                .criterion("get_hunger_cookie", InventoryChangedCriterion.Conditions.items(ModItems.HUNGER_COOKIE))
+                .criterion("get_hunger_cookie", InventoryChangedCriterion.Conditions.items(ModItems.HEART_OF_HUNGER))
                 .build(consumer, BsLFW.MOD_ID + "/get_hunger_cookie");
     }
 }
