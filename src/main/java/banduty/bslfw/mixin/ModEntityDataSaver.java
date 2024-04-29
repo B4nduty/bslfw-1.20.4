@@ -13,9 +13,15 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class ModEntityDataSaver implements IEntityDataSaver {
     @Unique
     private boolean limitHunger = false;
+    @Unique
+    private boolean limitCorrupted = false;
     @Override
     public boolean bslfw$isLimitedHunger() {
         return limitHunger;
+    }
+    @Override
+    public boolean bslfw$isLimitedCorrupted() {
+        return limitCorrupted;
     }
 
     @Override
@@ -23,10 +29,18 @@ public class ModEntityDataSaver implements IEntityDataSaver {
         this.limitHunger = limitHunger;
     }
 
+    @Override
+    public void bslfw$setLimitCorrupted(boolean limitCorrupted) {
+        this.limitCorrupted = limitCorrupted;
+    }
+
     @Inject(method = "writeCustomDataToNbt", at = @At("HEAD"))
     protected void injectWriteMethod(NbtCompound nbt, CallbackInfo ci) {
         if (limitHunger) {
             nbt.putBoolean("LimitHunger", true);
+        }
+        if (limitCorrupted) {
+            nbt.putBoolean("limitCorrupted", true);
         }
     }
 
@@ -34,6 +48,9 @@ public class ModEntityDataSaver implements IEntityDataSaver {
     protected void injectReadMethod(NbtCompound nbt, CallbackInfo info) {
         if (nbt.contains("LimitHunger")) {
             limitHunger = nbt.getBoolean("LimitHunger");
+        }
+        if (nbt.contains("limitCorrupted")) {
+            limitCorrupted = nbt.getBoolean("limitCorrupted");
         }
     }
 }

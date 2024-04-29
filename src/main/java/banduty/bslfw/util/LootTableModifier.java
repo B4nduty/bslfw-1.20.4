@@ -33,13 +33,23 @@ public class LootTableModifier {
             LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
                 if (COW_ID.equals(id) || PIG_ID.equals(id) || CHICKEN_ID.equals(id) || SHEEP_ID.equals(id) || WHEAT_ID.equals(id) ||
                         CARROTS_ID.equals(id) || POTATOES_ID.equals(id)) {
-                    LootPool.Builder hungerCookie = LootPool.builder()
+                    LootPool.Builder heartOfHunger = LootPool.builder()
                             .rolls(ConstantLootNumberProvider.create(1))
                             .conditionally(RandomChanceLootCondition.builder(BsLFW.CONFIG.common.getHeartOfHungerChanceSpawn()))
                             .with(ItemEntry.builder(ModItems.HEART_OF_HUNGER))
                             .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
-                    tableBuilder.pool(hungerCookie.build());
+                    tableBuilder.pool(heartOfHunger.build());
+                    if (BsLFW.CONFIG.common.modifyCorruptedHeart) {
+                        LootPool.Builder corruptedHeart = LootPool.builder()
+                                .rolls(ConstantLootNumberProvider.create(1))
+                                .conditionally(RandomChanceLootCondition.builder(BsLFW.CONFIG.common.getCorruptedHeartChanceSpawn()))
+                                .with(ItemEntry.builder(ModItems.CORRUPTED_HEART))
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                        tableBuilder.pool(corruptedHeart.build());
+
+                    }
                 }
             });
         }

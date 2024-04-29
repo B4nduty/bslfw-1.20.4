@@ -1,14 +1,18 @@
 {
   "item.bslfw.heart_of_hunger": "Coeur de Faim",
+  "item.bslfw.corrupted_heart": "Cœur Corrompu",
 
   "text.autoconfig.bslfw.title": "Banduty's Limit Food Waste",
   "text.autoconfig.bslfw.option.common.modifyHungerLimitHeartOfHunger": "Autoriser la Limite de Faim",
   "text.autoconfig.bslfw.option.common.modifyHungerLimitHeartOfHunger.@Tooltip": "S'il est défini sur True, Coeur de Faim n'Apparaît Pas",
   "text.autoconfig.bslfw.option.common.hungerLimit": "Limite de Faim",
   "text.autoconfig.bslfw.option.common.heartOfHungerChanceSpawn": "Coeur de Faim - Apparition Fortuite",
+  "text.autoconfig.bslfw.option.common.modifyCorruptedHeart": "Autoriser le Cœur Corrompu",
+  "text.autoconfig.bslfw.option.common.modifyCorruptedHeart.@Tooltip": "Si Autoriser la Limite de Faim est défini sur True, le Cœur Corrompu n'Apparaîtra Pas.",
+  "text.autoconfig.bslfw.option.common.corruptedHeartChanceSpawn": "Cœur Corrompu - Apparition Fortuite",
 
-  "message.bslfw.heart_of_hunger.limited": "Vous êtes Désormais Protégé de la Famine",
-  "message.bslfw.heart_of_hunger.unlimited": "Vous êtes Maintenant Exposé à la Famine",
+  "message.bslfw.heart.limited": "Vous êtes Désormais Protégé de la Famine",
+  "message.bslfw.heart.unlimited": "Vous êtes Maintenant Exposé à la Famine",
 
   "advancement.heart_of_hunger.title": "Anton Ego",
   "advancement.heart_of_hunger.desc": "Obtenez un Coeur de Faim"

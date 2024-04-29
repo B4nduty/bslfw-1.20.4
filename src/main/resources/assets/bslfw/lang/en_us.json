@@ -1,14 +1,18 @@
 {
   "item.bslfw.heart_of_hunger": "Heart Of Hunger",
+  "item.bslfw.corrupted_heart": "Corrupted Heart",
 
   "text.autoconfig.bslfw.title": "Banduty's Limit Food Waste",
   "text.autoconfig.bslfw.option.common.modifyHungerLimitHeartOfHunger": "Allow Hunger Limit",
   "text.autoconfig.bslfw.option.common.modifyHungerLimitHeartOfHunger.@Tooltip": "If set True, Heart Of Hunger won't Spawn",
   "text.autoconfig.bslfw.option.common.hungerLimit": "Hunger Limit",
   "text.autoconfig.bslfw.option.common.heartOfHungerChanceSpawn": "Heart Of Hunger - Chance Spawn",
+  "text.autoconfig.bslfw.option.common.modifyCorruptedHeart": "Allow Corrupted Heart",
+  "text.autoconfig.bslfw.option.common.modifyCorruptedHeart.@Tooltip": "If Allow Hunger Limit is True, Corrupted Heart won't Spawn",
+  "text.autoconfig.bslfw.option.common.corruptedHeartChanceSpawn": "Corrupted Heart - Chance Spawn",
 
-  "message.bslfw.heart_of_hunger.limited": "You are now Protected from Famine",
-  "message.bslfw.heart_of_hunger.unlimited": "You are now Exposed to the Famine",
+  "message.bslfw.heart.limited": "You are now Protected from Famine",
+  "message.bslfw.heart.unlimited": "You are now Exposed to the Famine",
 
   "advancement.heart_of_hunger.title": "Gordon Ramsay",
   "advancement.heart_of_hunger.desc": "Get Heart Of Hunger"

@@ -1,14 +1,18 @@
 {
   "item.bslfw.heart_of_hunger": "Corazón del Hambre",
+  "item.bslfw.corrupted_heart": "Corazón Corrupto",
 
   "text.autoconfig.bslfw.title": "Banduty's Limit Food Waste",
   "text.autoconfig.bslfw.option.common.modifyHungerLimitHeartOfHunger": "Permitir Límite de Hambre",
   "text.autoconfig.bslfw.option.common.modifyHungerLimitHeartOfHunger.@Tooltip": "Si se establece en True, no se generará el Corazón del Hambre.",
   "text.autoconfig.bslfw.option.common.hungerLimit": "Límite del Hambre",
   "text.autoconfig.bslfw.option.common.heartOfHungerChanceSpawn": "Corazón del Hambre - Probabilidad de Aparición",
+  "text.autoconfig.bslfw.option.common.modifyCorruptedHeart": "Permitir el Corazón Corrupto",
+  "text.autoconfig.bslfw.option.common.modifyCorruptedHeart.@Tooltip": "Si Permitir Límite de Hambre se establece en True, Corazón Corrupto no Aparecerá",
+  "text.autoconfig.bslfw.option.common.corruptedHeartChanceSpawn": "Corazón Corrupto - Probabilidad de Aparición",
 
-  "message.bslfw.heart_of_hunger.limited": "Ahora estás Protegido de la Hambruna",
-  "message.bslfw.heart_of_hunger.unlimited": "Ahora estás Expuesto a la Hambruna",
+  "message.bslfw.heart.limited": "Ahora estás Protegido de la Hambruna",
+  "message.bslfw.heart.unlimited": "Ahora estás Expuesto a la Hambruna",
 
   "advancement.heart_of_hunger.title": "El Monstruo de las Galletas",
   "advancement.heart_of_hunger.desc": "Consigue un Corazón del Hambre"

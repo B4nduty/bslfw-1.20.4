@@ -21,6 +21,11 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
                 "If set True, Hunger Cookie won't Spawn")
         public boolean modifyHungerLimitHeartOfHunger = false;
 
+        @ConfigEntry.Gui.Tooltip()
+        @Comment("Allow Corrupted Heart | Default: true" +
+                "If modifyHungerLimitHeartOfHunger is True, Corrupted Heart won't Spawn")
+        public boolean modifyCorruptedHeart = true;
+
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
                Hunger Limit | Default: 6
@@ -37,6 +42,15 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
         float heartOfHungerChanceSpawn = 0.0002f;
         public float getHeartOfHungerChanceSpawn() {
             return Math.max(0, heartOfHungerChanceSpawn);
+        }
+
+        @ConfigEntry.Gui.Tooltip(count = 0)
+        @Comment("""
+                Hunger Cookie Chance of Spawn | Default: 0.00002f
+                """)
+        float corruptedHeartChanceSpawn = 0.00002f;
+        public float getCorruptedHeartChanceSpawn() {
+            return Math.max(0, corruptedHeartChanceSpawn);
         }
     }
 }
