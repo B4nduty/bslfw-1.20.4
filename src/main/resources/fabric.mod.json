@@ -22,6 +22,9 @@
 		"fabric-datagen": [
 			"banduty.bslfw.BsLFWDataGenerator"
 		],
+		"client": [
+			"banduty.bslfw.BsLFWClient"
+		],
 		"modmenu": [
 			"banduty.bslfw.compat.ModMenuIntegration"
 		]

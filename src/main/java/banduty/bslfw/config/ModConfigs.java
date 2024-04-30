@@ -32,7 +32,7 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
                """)
         int hungerLimit = 6;
         public int getHungerLimit() {
-            return Math.max(0, hungerLimit);
+            return Math.min(20, Math.max(0, hungerLimit));
         }
 
         @ConfigEntry.Gui.Tooltip(count = 0)

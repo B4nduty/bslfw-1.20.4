@@ -1,8 +1,9 @@
 package banduty.bslfw.item;
 
+import banduty.bslfw.BsLFW;
 import banduty.bslfw.util.IEntityDataSaver;
+import banduty.bslfw.util.LimitReinforced;
 import banduty.bslfw.util.LimitHunger;
-import banduty.bslfw.util.LimitCorrupted;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -17,14 +18,14 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
-public class HeartOfTheObscure extends Item {
-    public HeartOfTheObscure(Settings settings) {
+public class ReinforcedHeart extends Item {
+    public ReinforcedHeart(Settings settings) {
         super(settings);
     }
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        return ItemUsage.consumeHeldItem(world, user, hand);
+        if(!BsLFW.CONFIG.common.modifyHungerLimitHeartOfHunger) return ItemUsage.consumeHeldItem(world, user, hand); return TypedActionResult.pass(user.getStackInHand(hand));
     }
 
     @Override
@@ -41,18 +42,18 @@ public class HeartOfTheObscure extends Item {
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
         if (!world.isClient() && user instanceof PlayerEntity player) {
             player.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 1, 0));
-            if (!LimitCorrupted.isLimitedCorrupted((IEntityDataSaver) player)) {
+            if (!player.isCreative()) stack.decrement(1);
+            if (!LimitReinforced.isLimitedReinforced((IEntityDataSaver) player)) {
                 if (!LimitHunger.isLimitedHunger((IEntityDataSaver) player)) {
                     if (!player.isCreative()) stack.decrement(1);
-                    LimitCorrupted.setLimitCorrupted(((IEntityDataSaver) player), true);
+                    LimitReinforced.setLimitReinforced(((IEntityDataSaver) player), true);
                     player.sendMessage(Text.translatable("message.bslfw.heart.limited").formatted(Formatting.LIGHT_PURPLE));
                     return stack;
                 }
             }
-            if (!player.isCreative()) stack.decrement(1);
-            if (LimitHunger.isLimitedHunger((IEntityDataSaver) player) || LimitCorrupted.isLimitedCorrupted((IEntityDataSaver) player)) player.sendMessage(Text.translatable("message.bslfw.heart.unlimited").formatted(Formatting.RED));
+            if (LimitHunger.isLimitedHunger((IEntityDataSaver) player) || LimitReinforced.isLimitedReinforced((IEntityDataSaver) player)) player.sendMessage(Text.translatable("message.bslfw.heart.unlimited").formatted(Formatting.RED));
             if (LimitHunger.isLimitedHunger((IEntityDataSaver) player)) LimitHunger.setLimitHunger(((IEntityDataSaver) player), false);
-            if (LimitCorrupted.isLimitedCorrupted((IEntityDataSaver) player)) LimitCorrupted.setLimitCorrupted(((IEntityDataSaver) player), false);
+            if (LimitReinforced.isLimitedReinforced((IEntityDataSaver) player)) LimitReinforced.setLimitReinforced(((IEntityDataSaver) player), false);
         }
         return stack;
     }

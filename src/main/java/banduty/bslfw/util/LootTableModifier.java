@@ -44,7 +44,7 @@ public class LootTableModifier {
                         LootPool.Builder corruptedHeart = LootPool.builder()
                                 .rolls(ConstantLootNumberProvider.create(1))
                                 .conditionally(RandomChanceLootCondition.builder(BsLFW.CONFIG.common.getCorruptedHeartChanceSpawn()))
-                                .with(ItemEntry.builder(ModItems.CORRUPTED_HEART))
+                                .with(ItemEntry.builder(ModItems.REINFORCED_HEART))
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
                         tableBuilder.pool(corruptedHeart.build());

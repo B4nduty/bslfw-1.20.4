@@ -1,6 +1,6 @@
 {
   "item.bslfw.heart_of_hunger": "Heart Of Hunger",
-  "item.bslfw.corrupted_heart": "Corrupted Heart",
+  "item.bslfw.reinforced_heart": "Reinforced Heart",
 
   "text.autoconfig.bslfw.title": "Banduty's Limit Food Waste",
   "text.autoconfig.bslfw.option.common.modifyHungerLimitHeartOfHunger": "Allow Hunger Limit",

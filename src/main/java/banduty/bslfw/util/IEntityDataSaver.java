@@ -1,11 +1,13 @@
 package banduty.bslfw.util;
 
+import org.jetbrains.annotations.Nullable;
+
 public interface IEntityDataSaver {
+    void bslfw$setLimitHunger(@Nullable Boolean hungerLimitBoolean);
+
     boolean bslfw$isLimitedHunger();
 
-    void bslfw$setLimitHunger(boolean limitHunger);
+    void bslfw$setLimitReinforced(@Nullable Boolean hungerLimitBoolean);
 
-    boolean bslfw$isLimitedCorrupted();
-
-    void bslfw$setLimitCorrupted(boolean limitCorrupted);
+    boolean bslfw$isLimitedReinforced();
 }
