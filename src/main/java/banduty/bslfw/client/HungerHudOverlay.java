@@ -11,8 +11,8 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.Identifier;
 
 public class HungerHudOverlay implements HudRenderCallback {
-    private static final Identifier HUNGER_NO_LIMITED = new Identifier(BsLFW.MOD_ID, "textures/hunger/hunger_no_limited.png");
-    private static final Identifier HUNGER_LIMITED = new Identifier(BsLFW.MOD_ID, "textures/hunger/hunger_limited.png");
+    private static final Identifier HUNGER_NO_LIMITED = new Identifier(BsLFW.MOD_ID, "textures/overlay/hunger_no_limited.png");
+    private static final Identifier HUNGER_LIMITED = new Identifier(BsLFW.MOD_ID, "textures/overlay/hunger_limited.png");
 
     @Override
     public void onHudRender(DrawContext drawContext, float tickDelta) {

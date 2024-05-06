@@ -2,6 +2,7 @@ package banduty.bslfw;
 
 import banduty.bslfw.config.ModConfigs;
 import banduty.bslfw.item.ModItems;
+import banduty.bslfw.sound.ModSounds;
 import banduty.bslfw.util.LootTableModifier;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
@@ -20,6 +21,8 @@ public class BsLFW implements ModInitializer {
 	public void onInitialize() {
 		AutoConfig.register(ModConfigs.class, PartitioningSerializer.wrap(JanksonConfigSerializer::new));
 		CONFIG = AutoConfig.getConfigHolder(ModConfigs.class).getConfig();
+
+		ModSounds.registerSounds();
 
 		ModItems.registerModItems();
 		LootTableModifier.modifyLootTables();

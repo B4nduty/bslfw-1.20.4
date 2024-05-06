@@ -1,6 +1,7 @@
 package banduty.bslfw.item;
 
 import banduty.bslfw.BsLFW;
+import banduty.bslfw.sound.ModSounds;
 import banduty.bslfw.util.IEntityDataSaver;
 import banduty.bslfw.util.LimitReinforced;
 import banduty.bslfw.util.LimitHunger;
@@ -11,11 +12,14 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsage;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class HeartOfHunger extends Item {
@@ -40,6 +44,11 @@ public class HeartOfHunger extends Item {
 
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
+        if (!world.isClient) {
+            ServerWorld serverWorld = (ServerWorld) user.getWorld();
+            BlockPos blockPos = user.getBlockPos();
+            serverWorld.playSound(null, blockPos, ModSounds.HEART_BEAT, SoundCategory.PLAYERS, 1f, 1f);
+        }
         if (!world.isClient() && user instanceof PlayerEntity player) {
             player.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 1, 0));
             if (!player.isCreative()) stack.decrement(1);

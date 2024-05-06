@@ -1,0 +1,8 @@
+{
+  "heart_beat": {
+    "subtitle": "sounds.bslfw.heart_beat",
+    "sounds": [
+      "bslfw:heart_beat"
+    ]
+  }
+}
