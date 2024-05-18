@@ -18,11 +18,11 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
     public static final class Common implements ConfigData {
         @ConfigEntry.Gui.Tooltip()
         @Comment("Allow Hunger Limit | Default: false" +
-                "If set True, Hunger Cookie won't Spawn")
+                "If set True, Heart Of Hunger won't Spawn")
         public boolean modifyHungerLimitHeartOfHunger = false;
 
         @ConfigEntry.Gui.Tooltip()
-        @Comment("Allow Corrupted Heart | Default: true" +
+        @Comment("Allow Reinforced Heart | Default: true" +
                 "If modifyHungerLimitHeartOfHunger is True, Corrupted Heart won't Spawn")
         public boolean modifyCorruptedHeart = true;
 
@@ -37,7 +37,7 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Hunger Cookie Chance of Spawn | Default: 0.0002f
+                Heart Of Hunger Chance of Spawn | Default: 0.0002f
                 """)
         float heartOfHungerChanceSpawn = 0.0002f;
         public float getHeartOfHungerChanceSpawn() {
@@ -46,11 +46,11 @@ public class ModConfigs extends PartitioningSerializer.GlobalData {
 
         @ConfigEntry.Gui.Tooltip(count = 0)
         @Comment("""
-                Hunger Cookie Chance of Spawn | Default: 0.00002f
+                Reinforced Heart Chance of Spawn | Default: 0.00002f
                 """)
-        float corruptedHeartChanceSpawn = 0.00002f;
-        public float getCorruptedHeartChanceSpawn() {
-            return Math.max(0, corruptedHeartChanceSpawn);
+        float reinforcedHeartChanceSpawn = 0.00002f;
+        public float getReinforcedHeartChanceSpawn() {
+            return Math.max(0, reinforcedHeartChanceSpawn);
         }
     }
 }

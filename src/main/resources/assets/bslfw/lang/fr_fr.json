@@ -1,19 +1,19 @@
 {
-  "item.bslfw.heart_of_hunger": "Cœur de Faim",
+  "item.bslfw.heart_of_hunger": "Cœur de Gelée",
   "item.bslfw.reinforced_heart": "Cœur Renforcé",
 
   "text.autoconfig.bslfw.title": "Banduty's Limit Food Waste",
   "text.autoconfig.bslfw.option.common.modifyHungerLimitHeartOfHunger": "Autoriser la Limite de Faim",
-  "text.autoconfig.bslfw.option.common.modifyHungerLimitHeartOfHunger.@Tooltip": "S'il est défini sur True, Coeur de Faim n'Apparaît Pas",
+  "text.autoconfig.bslfw.option.common.modifyHungerLimitHeartOfHunger.@Tooltip": "S'il est défini sur True, Cœur de Gelée n'Apparaît Pas",
   "text.autoconfig.bslfw.option.common.hungerLimit": "Limite de Faim",
-  "text.autoconfig.bslfw.option.common.heartOfHungerChanceSpawn": "Coeur de Faim - Apparition Fortuite",
-  "text.autoconfig.bslfw.option.common.modifyCorruptedHeart": "Autoriser le Cœur Corrompu",
-  "text.autoconfig.bslfw.option.common.modifyCorruptedHeart.@Tooltip": "Si Autoriser la Limite de Faim est défini sur True, le Cœur Corrompu n'Apparaîtra Pas.",
-  "text.autoconfig.bslfw.option.common.corruptedHeartChanceSpawn": "Cœur Corrompu - Apparition Fortuite",
+  "text.autoconfig.bslfw.option.common.heartOfHungerChanceSpawn": "Cœur de Gelée - Apparition Fortuite",
+  "text.autoconfig.bslfw.option.common.modifyCorruptedHeart": "Autoriser le Cœur Renforcé",
+  "text.autoconfig.bslfw.option.common.modifyCorruptedHeart.@Tooltip": "Si Autoriser la Limite de Faim est défini sur True, le Cœur Renforcé n'Apparaîtra Pas.",
+  "text.autoconfig.bslfw.option.common.corruptedHeartChanceSpawn": "Cœur Renforcé - Apparition Fortuite",
 
   "message.bslfw.heart.limited": "Vous êtes Désormais Protégé de la Famine",
   "message.bslfw.heart.unlimited": "Vous êtes Maintenant Exposé à la Famine",
 
   "advancement.heart_of_hunger.title": "Anton Ego",
-  "advancement.heart_of_hunger.desc": "Obtenez un Coeur de Faim"
+  "advancement.heart_of_hunger.desc": "Obtenez un Cœur de Gelée et Cœur Renforcé"
 }

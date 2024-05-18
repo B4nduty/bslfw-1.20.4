@@ -1,11 +1,23 @@
 {
   "criteria": {
-    "get_hunger_cookie": {
+    "get_heart_of_hunger": {
       "conditions": {
         "items": [
           {
             "items": [
               "bslfw:heart_of_hunger"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "get_reinforced_heart": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bslfw:reinforced_heart"
             ]
           }
         ]
@@ -28,7 +40,10 @@
   },
   "requirements": [
     [
-      "get_hunger_cookie"
+      "get_heart_of_hunger"
+    ],
+    [
+      "get_reinforced_heart"
     ]
   ],
   "sends_telemetry_event": true

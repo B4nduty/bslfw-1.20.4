@@ -20,7 +20,7 @@ public class AdvancementsProvider extends FabricAdvancementProvider {
 
     @Override
     public void generateAdvancement(Consumer<AdvancementEntry> consumer) {
-        AdvancementEntry hungerCookieAdvancement = Advancement.Builder.create()
+        AdvancementEntry heartOfHungerAdvancement = Advancement.Builder.create()
                 .display(
                         ModItems.HEART_OF_HUNGER,
                         Text.translatable("advancement.heart_of_hunger.title"),
@@ -31,7 +31,8 @@ public class AdvancementsProvider extends FabricAdvancementProvider {
                         true,
                         false
                 )
-                .criterion("get_hunger_cookie", InventoryChangedCriterion.Conditions.items(ModItems.HEART_OF_HUNGER))
-                .build(consumer, BsLFW.MOD_ID + "/get_hunger_cookie");
+                .criterion("get_heart_of_hunger", InventoryChangedCriterion.Conditions.items(ModItems.HEART_OF_HUNGER))
+                .criterion("get_reinforced_heart", InventoryChangedCriterion.Conditions.items(ModItems.REINFORCED_HEART))
+                .build(consumer, BsLFW.MOD_ID + "/get_heart_of_hunger");
     }
 }
